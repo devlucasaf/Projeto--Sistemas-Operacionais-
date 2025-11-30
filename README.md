@@ -1,3 +1,8 @@
+<img 
+    width=100% 
+    src="https://capsule-render.vercel.app/api?type=waving&color=A020F0&height=120&section=header"
+/>
+
 # ⚙️ BSB Compute – Sistema de Orquestração de Tarefas
 
 Este repositório contém a implementação do sistema de orquestração de tarefas da BSB Compute, uma simulação de cluster de servidores de inferência responsável por distribuir requisições de IA em tempo real utilizando políticas de escalonamento de sistemas operacionais.
@@ -131,3 +136,8 @@ Arquivo típico entrada.json:
 - Throughput total
 - Ocupação média da CPU simulada
 - Tempo de espera máximo
+
+<img 
+    width=100% 
+    src="https://capsule-render.vercel.app/api?type=waving&color=A020F0&height=120&section=footer"
+/>
