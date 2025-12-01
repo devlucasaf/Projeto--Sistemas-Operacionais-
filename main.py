@@ -22,3 +22,29 @@ REQUISIÇÕES_INICIAIS = [
 
 # Contador global para IDs de novas requisições aleatórias
 REQUISICAO_ID_COUNTER = 106
+
+def simular_chegada_aleatoria(tempo_atual):
+    global REQUISICAO_ID_COUNTER
+    novas_chegadas = []
+    
+    # !!!ALTERAR ISSO PARA GERAR FUNÇÕES ALEATÓRIAS
+    if random.random() < 0:
+        id_nova = REQUISICAO_ID_COUNTER
+        REQUISICAO_ID_COUNTER += 1
+        
+        # Geração de requisições aleatórias para testes
+        tipo = random.choice(["visao_computacional", "nlp", "fala", "analise_imagem"])
+        prioridade = random.randint(1, 3) # 1 - Maior prioradade | 10 - Menor prioridade
+        tempo_exec = random.randint(1, 10) 
+        
+        nova_req = {
+            "id": id_nova,
+            "tipo": tipo,
+            "prioridade": prioridade,
+            "tempo_exec": tempo_exec,
+            "chegada": tempo_atual,
+        }
+        novas_chegadas.append(nova_req)
+        print(f"Requisição {id_nova} (P:{prioridade}, T_exec:{tempo_exec}) CHEGOU.")
+            
+    return novas_chegadas
